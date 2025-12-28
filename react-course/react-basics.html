@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="jsContainer"></div>
+    <script type="text/javascript" src="react-basics.js"></script>
+    <script type="text/javascript" src="react.js"></script>
+    <script type="text/javascript" src="react-dom.js"></script>
+    <script type="text/javascript" src="babel.js"></script>
+    <script type="text/babel">
+      const container = document.querySelector("#jsContainer");
+      const div = (
+        <>
+          <button>Click Me</button>
+          <p>Sample element</p>
+        </>
+      );
+      ReactDOM.createRoot(container).render(div);
+    </script>
+  </body>
+</html>
